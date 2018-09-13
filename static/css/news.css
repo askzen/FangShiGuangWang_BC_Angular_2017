@@ -1,0 +1,387 @@
+﻿*{
+	margin: 0;
+	padding:0;
+}
+a{
+	text-decoration: none;
+}
+ul,li {
+	list-style: none;
+}
+.topmenu{
+	height: 59px;
+}
+.inner {
+	width: 1236px;
+	margin: 90px auto 0;
+}
+.topmenu .nav{
+	width: 456px;
+	height: 37px;
+	margin-top: 60px;
+
+}
+.inner .topmenu .nav dd{
+    float: left;
+    margin-right: 40px;
+
+}
+.inner .topmenu .nav dd a {
+	display: block;
+	width: 67px;
+	height: 37px;
+	color: #333333;
+	font-weight: bold;
+}  
+.search {
+	position: relative;
+	margin-top: -45px;
+	height: 39px;
+	border: 1px solid #E0E0E0;
+	float: right;
+	height: 39px;
+    padding-left: 100px;
+ /*    z-index: 11; */
+    border-radius: 20px;
+    width: 400px;
+}
+.search .select{
+	width: 100px;
+	height: 54px;
+	position: absolute;
+	left: 20px;
+	top:20%;
+}
+.topmenu .search i {
+	position: absolute;
+	left: 60px;
+	top: 15px;
+    width: 11px;
+    height: 7px;
+	background: url('../imgs/head.png') -152px 0 no-repeat;
+}
+.topmenu .search input{
+	display: block;
+	width: 320px;
+	height: 28px;
+	position: absolute;
+	top: 3px;
+}
+.topmenu .search span{
+	display: block;
+	position: absolute;
+	left: 80px;
+	top: 6px;
+	width: 1px;
+	height: 14px;
+/* 	background-color: #DBDBDB; */
+}
+.topmenu .search .button {
+	display: block;
+	width: 54px;
+	height: 32px;
+	position: absolute;
+	right: 40px;
+	top: -6px;
+
+}
+.topmenu .search .button i {
+	background: url('../imgs/head.png')-115px -45px no-repeat;
+	width: 19px;
+	height: 19px;
+}
+.news-hader{
+	position: relative;
+	width: 1200px;
+	height: 458px;
+
+}
+.news-hader .left{
+	position: relative;
+	width: 800px;
+	height: 450px;
+	background: url('../imgs/154556.58419403_o.jpg') no-repeat;
+}
+	
+.news-hader .left .carousel {
+	width: 800px;
+	height: 450px;
+	border: 1px solid #000;
+	margin: 50px auto;
+	position: relative;
+}
+
+.news-hader .left .carousel .imgs ul li {
+	list-style: none;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 900px;
+	height: 540px;
+	display: none;
+}
+
+.news-hader .left .carousel .imgs ul li:first-child {
+		display: block;
+}
+
+.news-hader .left .carousel .btns a {
+	position: absolute;
+	width: 30px;
+	height: 60px;
+	background-color: rgba(0,0,0,.0);
+	font-size: 40px;
+	line-height: 60px;
+	text-align: center;
+	color: #fff;
+	top: 50%;
+	margin-top: -30px;
+	text-decoration: none;
+}
+.news-hader .left .carousel .btns a.leftBtn {
+	left: 10px;
+}
+
+.news-hader .left .carousel .btns a.rightBtn {
+	right: 10px;
+}
+
+.news-hader .left h1 {
+	position: absolute;
+	left: 10px;
+	bottom: 50px;
+	color: #fff;
+}
+.news-hader .left h3{
+	position: absolute;
+	left: 10px;
+	bottom: 10px;
+	color: #fff;
+}
+.news-hader .right-top{
+	position: absolute;
+	width: 392px;
+	height: 221px;
+	background: url('../imgs/162407.23762900_o.jpg') no-repeat;
+	top: 0px;
+	right: 0px;
+}
+.news-hader .right-top h3{
+	position: absolute;
+	bottom: 33px;
+	left: 10px;
+	color: #fff;
+}
+.news-hader .right-top h5{
+	position: absolute;
+	bottom: 13px;
+	left: 10px;
+	color: #E7E7E7;
+}
+.news-hader .right-bottom{
+	position: absolute;
+	width: 392px;
+	height: 221px;
+	background: url('../imgs/223829.58411959_o.jpg') no-repeat;
+	bottom: 8px;
+	right: 0px;
+}
+.newslist {
+	width: 880px;
+	height: 38px;
+	border-bottom: 2px solid #e6e6e6;
+}
+.newslist dl dd {
+	font-size: 16px;
+    float: left;
+    display: inline;
+    width: 20px;
+    text-align: left;
+    padding-left: 10px;
+  	margin-right: 30px;
+    padding-left: 10px;
+}
+.newslist dl dd a {
+	display: block;
+	width:32px;
+	height: 34px;
+	color:#333333;
+}
+.newslist dl dd .icon a {
+	color: #1F7DD7;
+}
+
+.content{
+	width: 1223px;
+	height: 1000px;
+	position: relative;
+	margin-top: 23px;
+}
+.content::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.content ul.content-left {
+	float: left;
+	width: 880px;
+}
+.content ul.content-left li {
+    float: left;
+    margin-right: 10px;
+    height: 256px;
+    overflow: hidden;
+    width: 280px;
+    height: 231px;
+    display: list-item;
+    text-align: -webkit-match-parent
+}
+
+.content ul li .content1 {
+	width: 280px;
+	height: 138px;
+	background: url('../imgs/171717.72151759_280X138X4.jpg') no-repeat;
+}
+.content ul li .title {
+	display: block;
+	width: 280px;
+	height: 21px;
+	font-weight: bold;
+	color:#000;
+
+}
+.content ul li .jianjie {
+	display: block;
+	width: 280px;
+	height: 25px;
+	font-size: 14px;
+	color:#888888;
+
+}
+.content ul li span {
+	font-size: 12px;
+	color:#888888;
+}
+
+.content-right{
+	float: right;
+	border: 1px solid #ccc;
+	/*position: absolute;
+	right: 90px;
+	top:635px;*/
+	width: 290px;
+	height: 1000px;
+	margin: 0;
+}
+
+.content-right h4 {
+	width: 290px;
+	height: 50px;
+	background-color: #E6E6E6;
+	text-align: center;
+	line-height: 50px;
+}
+.content-right ul li .type {
+	width: 236px;
+	height: 116px;
+	border: 1px solid #ccc;
+	margin:10px auto;
+	background: url('../imgs/092742.19188923_236X116X4.jpg') no-repeat;
+}
+.content-right ul li a {
+	display: block;
+	font-size: 14px;
+	text-align: center;
+	color: #333333;
+}
+.inner .guanggao {
+	display: block;
+	width: 1200px;
+	height: 110px;
+	background: url('../imgs/0f000nYQaed30A39jPksss.jpg') no-repeat;
+}
+.inner .new-title {
+	display: block;
+    text-align: center;
+    width: 1200px;
+    height: 30px;
+    border-bottom: 1px solid #ccc;
+	
+}
+.inner .new-title b {
+	font-size: 20px;
+	line-height: 30px;
+
+}
+.inner .duihua {
+	width: 1200px;
+	height: 475px;
+/* 	border: 1px solid #ccc; */
+	margin-top: 20px;
+	position: relative;
+}
+.inner .duihua .tu1 {
+	width: 790px;
+	height: 445px;
+	background: url('../imgs/175530.41774028_o.jpg')
+}
+.inner .duihua .tu1 em {
+	position: absolute;
+	width: 92px;
+	height: 92px;
+	background: url('../imgs/newspic.png') -37px -64px no-repeat;
+	left: 50%;
+    top: 50%;
+    margin-left: -271px;
+    margin-top: -46px;
+}
+.inner .duihua h4{
+	display: block;
+	width: 380px;
+	height: 34px;
+	position: absolute;
+	right: -20px;
+	top: 50px;
+}
+.inner .duihua h4 a {
+	font-size: 25px;
+	color: #333333;
+}
+.inner .duihua h5 {
+	display: block;
+	width: 380px;
+	height: 88px;
+	position: absolute;
+	right: -10px;
+	top: 100px;
+}
+.inner .duihua h5 a {
+	display: block;
+	width: 380px;
+	height: 24px;
+	font-size:20px;
+	color: #334252;
+}
+.inner .duihua p {
+	display: block;
+	width: 380px;
+	height: 78px;
+	position: absolute;
+	right: 1px;
+	top: 180px;
+	color: #666666;
+}
+.inner .duihua .huigu {
+	width:404px;
+	height: 106px;
+	position: absolute;
+	bottom: 30px;
+	right: -15px;
+	margin-top: 10px;
+}
+.inner .duihua .huigu .huigutu{
+	margin-top: 15px;
+}
+.inner .xiazai {
+	margin-bottom: 80px;
+}

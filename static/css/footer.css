@@ -1,0 +1,284 @@
+.footer {
+	position: relative;
+	height: 364px;
+	background: #F7F7F7;
+	box-sizing: border-box;
+}
+.footer-inner {
+	width: 1200px;
+	margin: 0 auto;
+}
+.footer .list a:hover {
+	color: #0081BC!important;
+}
+.footer .line {
+	width: 100%;
+	height: 4px;
+	background: url("../imgs/foot.png") no-repeat 0 0;
+}
+.footer .list {
+	margin-top: 36px;
+	width: 100%;
+	/*padding-left: 95px;*/
+	height: 160px;
+
+}
+.footer .list .box1 {
+	float: left;
+	width: 179px;
+	height: 160px;
+	border-right: 1px solid #ccc;
+	box-sizing: border-box;
+}
+.footer .list .box1 .pic {
+	width: 136px;
+	height: 43px;
+	background: url(../imgs/foot.png) no-repeat 0 -10px;
+	margin-bottom: 17px;
+}
+.footer .list .box1 .info {
+	
+}
+.footer .list .box1 ul {
+	overflow: hidden;
+}
+.footer .list .box1 ul li {
+	float: left;
+	margin-right: 30px;
+	line-height: 23px;
+}
+.footer .list .box1 ul li a {
+	display: block;
+	color: #333333;
+	font-size: 13px;
+}
+.footer .list .box2 {
+	float: left;
+	width: 500px;
+	padding-left: 54px;
+	box-sizing: border-box;
+	border-right: 1px solid #ccc;
+}
+.footer .list .box2 .lanmu {
+	float: left;
+	width: 97px;
+}
+.footer .list .box2 p {
+	height: 24px;
+	line-height: 24px;
+	font-size: 13px;
+	color: #333333;
+	margin-bottom: 10px;
+}
+.footer .list .box2 .lanmu ul {
+	width: 100%;
+}
+.footer .list .box2  ul li a {
+	color: #333333;
+	font-size: 16px;
+}
+.footer .list .box2 li {
+	margin-bottom: 10px;
+}
+.footer .list .box2 .tuijian {
+	float: left;
+	width: 241px;
+}
+.footer .list .box2 ul {
+	overflow: hidden;
+}
+.footer .list .box2 ul li {
+	float: left;
+	margin-right: 30px;
+}
+.footer .list .box2 .guanzuwomen {
+	float: left;
+}
+.footer .list .box2 .guanzuwomen p {
+	margin-bottom: 9px;
+}
+.footer .list .box2 .guanzuwomen p.weibo {
+	width: 30px;
+	height: 30px;
+	background: url(../imgs/foot.png) no-repeat -140px -9px;
+}
+.footer .list .box2 .guanzuwomen p.weixin {
+	width: 30px;
+	height: 30px;
+	background: url(../imgs/foot.png) no-repeat -170px -9px;
+}
+.footer .list .box2 .guanzuwomen p.rss {
+	width: 30px;
+	height: 30px;
+	background: url(../imgs/foot.png) no-repeat -200px -9px;
+}
+.footer .list .box3 {
+	float: left;
+	width: 226px;
+	padding-left: 54px;
+	box-sizing: border-box;
+}
+.footer .list .box3 .top {
+	width: 172px;
+	height: 20px;
+}
+.footer .list .box3 .work {
+	float: left;
+	font-size: 18px;
+	line-height: 19px;
+	color: #333;
+}
+.footer .list .box3 .qi {
+	float: right;
+	padding-top: 7px;
+	font-size: 10px;
+	color: #7D7D7D;
+}
+.footer .list .box3 .pic {
+	margin-bottom: 11px;
+}
+.footer .list .box3 .pic img {
+	border: 1px solid #CCCCCC;
+}
+.footer .list .box3 .suosou {
+	position: relative;
+	width: 100%;
+
+}
+
+.footer .list .box3 .youxiang {
+	position: absolute;
+	width: 172px;
+	height: 26PX;
+	background: url(../imgs/foot.png) no-repeat -331px -34px;
+}
+
+.footer .list .box3 .sousuo .youxiang::after {
+	position: absolute;
+	left: 15px;
+	top: 8px;
+	content: "邮箱地址";
+	font-size: 12px;
+	color: #ccc;
+}
+.footer .list .box3 .dingyue {
+	position: absolute;
+	right: -10px;
+	width: 54px;
+	height: 26PX;
+	background: url(../imgs/foot.png) no-repeat -330px -9px;
+}
+
+.footer .list .box3 .sousuo .youxiang .dingyue::after {
+	position: absolute;
+	left: 15px;
+	top: 5px;
+	content: "订阅";
+	font-size: 12px;
+	color: #fff;
+}
+.footer .list .box4 {
+	float: left;
+	margin-left: 90px;
+}
+.footer .list .box4 .top {
+	width: 133px;
+	height: 20px;
+}
+.footer .list .box4 .shouji {
+	float: left;
+	font-size: 18px;
+	line-height: 19px;
+	color: #333;
+}
+.footer .list .box4 .fangbian {
+	float: right;
+	padding-top: 7px;
+	font-size: 10px;
+	color: #7D7D7D;
+}
+.footer .list .box4 .pic {
+	margin-top: 14px;
+	width: 133px;
+	height: 99px;
+	padding: 0 17px;
+}
+.footer .list .box4 .pic a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	background: url(../imgs/foot.png) no-repeat -795px -9px;
+	
+}	
+.footer .list .box4 .xiazai {
+	margin-top: 14px;
+	font-size: 13px;
+	color: #333;
+	text-align: center;
+}
+.footer .intro {
+	width: 100%;
+	height: 125px;
+	margin-top: 40px;
+	text-align: center;
+	color: #7E7E7F;
+	font-size: 12px;
+	line-height: 24px;
+	box-sizing: border-box;
+}
+.footer .intro p a {
+	color: #7E7E7F; 
+}
+.footer .intro p a.mr12 {
+	margin-right: 12px;
+}
+.footer .intro p a.beian_container {
+	position: relative;
+	padding-left: 32px;
+}
+.footer .intro p a.beian_container b {
+	position: absolute;
+	left: 4px;
+	top: -5px;
+	width: 18px;
+	height: 20px;
+	background: url(../imgs/foot.png) no-repeat -234px -12px;
+}
+.footer .intro .icon {
+	/*position: relative;*/
+	text-align: center;
+}
+.footer .intro .icon a {
+	/*display: block;*/
+	margin-right: 21px;
+
+}
+.footer .intro .icon a.kexin {
+	/*position: absolute;
+	left: 548px;
+	top: 0;*/
+	display: inline-block;
+	width: 68px;
+	height: 25px;
+	background: url(../imgs/foot.png) no-repeat 0 -60px;
+}
+.footer .intro .icon a.xin {
+	/*position: absolute;
+	left: 636px;
+	top: 0;*/
+	width: 68px;
+	height: 25px;
+	display: inline-block;
+	background: url(../imgs/foot.png) no-repeat -68px -60px;
+}
+
+.footer .intro .icon a.anquan img {
+	/*position: absolute;*/
+	/*display: inline-block;*/
+	/*left: 729px;
+	top: 0;*/
+	width: 62px;
+	height: 24px;
+	background-size: 100% auto;
+	vertical-align: top;
+}

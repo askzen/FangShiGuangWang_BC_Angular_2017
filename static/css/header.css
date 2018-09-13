@@ -1,0 +1,252 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+ul,ol,li {
+	list-style: none;
+}
+a {
+	text-decoration: none!important;
+}
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	width: 100%;
+	height: 60px;
+	padding: 0 19px 0 20px;
+	background: #1C2635;
+}
+.header .leftnav {
+	float: left;
+}
+.header .leftnav ul {
+	overflow: hidden;
+}
+.header .leftnav ul li {
+	float: left;
+	margin-right: 30px;
+	font-size: 14px;
+	line-height: 60px;
+}
+.header .leftnav ul li a {
+	color: #C8C8C8;
+}
+.header .leftnav ul li a:hover {
+	color: #fff;
+}
+.header .leftnav ul li.cur a {
+	color: #fff;
+	font-weight: bold;
+}
+.header .leftnav ul li.top {
+	position: relative;
+	margin-right: 0;
+	padding-right: 30px;
+}
+.header .leftnav ul li.top a::after {
+	content: "";
+	position: absolute;
+	left: 24px;
+    top: 10px;
+	width: 28px;
+	height: 14px;
+	background: url(../imgs/head.png) no-repeat -165px -28px;
+}
+.header .logo {
+	position: absolute;
+	top: 10px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 117px;
+	height: 36px;
+	background: url(/imgs/head.png) no-repeat 0 -315px;
+}
+.header .logo a {
+	display: inline-block;
+	width: 117px;
+	height: 36px;
+	text-indent: -9999px;
+	overflow: hidden;
+}
+.header .rightnav {
+	float: right;
+	line-height: 60px;
+	
+}
+.header .rightnav ul {
+
+}
+.header .rightnav ul li {
+	float: left;
+}
+.header .rightnav ul .upload {
+	position: relative;
+	width: 124px;
+	padding: 0 18px 0 16px;
+	box-sizing: border-box;
+}
+
+.header .rightnav ul .upload i {
+	width: 0px;
+	height: 60px;
+	border-left: 1px solid #141C28;
+	border-right: 1px solid #303947;
+}
+.header .rightnav ul .upload a {
+	position: relative;
+	display: inline-block;
+	font-size: 14px;
+	color: #fff;
+	padding-left: 17px;
+	padding-right: 14px;
+	box-sizing: border-box;
+
+}
+.header .rightnav ul .upload a::before {
+	position: absolute;
+	left: 0px;
+	top: 50%;
+	margin-top: -10px;
+	content: "";
+	width: 13px;
+	height: 20px;
+	background: url(/imgs/head.png) no-repeat -54px -45px;
+
+}
+.header .rightnav ul .upload a::after {
+	content: "";
+	position: absolute;
+	width: 7px;
+	height: 4px;
+	right: 0px;
+	top: 50%;
+	margin-top: -2px;
+	background: url(/imgs/head.png) no-repeat -140px -0;
+
+}
+.header .rightnav ul .upload i.left {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.header .rightnav ul .upload i.right {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.header .rightnav ul .upload {
+	position: relative;
+	z-index: 12;
+}
+.header .rightnav ul .upload .uploadImg {
+	width: 345px;
+	height: 211px;
+	position: absolute;
+	top: 60px;
+    left: -200px;
+    display: none;
+    z-index: 12;
+}
+.header .rightnav ul .upload:hover .uploadImg {
+	display: block;
+}
+
+.header .login_regist {
+	position: relative;
+	width: 177px;
+	padding: 0 40px 0 32px;
+	box-sizing: border-box;
+	overflow: hidden;
+
+}
+.header .login_regist a {
+	display: block;
+	font-size: 14px;
+	color: #C9C9C9;
+}
+.header .login_regist a:hover {
+	color: #Fff;
+}
+.header .login_regist .login {
+	float: left;
+}
+.header .login_regist i {
+	position: absolute;
+	left: 84px;
+	top: 22px;
+	height: 16px;
+	border: 1px solid #303947;
+}
+.header .login_regist .regist {
+	float: right;
+	
+}
+.header .shopping {
+	position: relative;
+	width: 62px;
+	height: 62px;
+	background: #E83729;
+}
+.header .shopping .gouwu {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	width: 26px;
+	height: 20px;
+	background: url(/imgs/head.png) no-repeat 0 -45px;
+}
+.header .shopping .gouwu b {
+	position: absolute;
+	top: 39px;
+   	right: -18px;
+	width: 353px;
+	height: 225px;
+	line-height: 225px;
+	font-weight: 400;
+	color: #999999;
+	text-align: center;
+   	background: #FFFFFF;
+   	border-top: 3px solid #E83729;
+   	box-shadow: 0 0 10px #323223;
+    display: none;
+    z-index: 13;
+}
+.header .shopping:hover .gouwu b {
+	display: block;
+}
+/*登录弹窗*/
+#single {
+	z-index: 100;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	width: 600px;
+	height: 400px;
+	background-color: rgba(255, 255, 255, .8);
+	border: 1px solid #c0a16b;
+	border-radius: 10px;
+	text-align: center;
+}
+#single a {
+	color: black;
+	text-decoration: none;
+	line-height: 400px;
+	font-size: 30px;
+}
+#single a:hover {
+	color: #0085E5;
+}
+#single span {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 30px;
+	cursor: pointer;
+}

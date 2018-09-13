@@ -1,0 +1,650 @@
+*{
+	padding: 0;
+	margin:0;
+	text-decoration: none;
+	list-style: none;
+}	
+.inner{
+	width: 1000px;
+	margin:0 auto;
+}
+/*轮播图样式*/
+ .carousel{
+    width: 100%;
+    height: 390px;
+    margin:60px auto 0;
+    position: relative;
+    overflow: hidden;
+}
+.carousel .imgList li{
+    width:100%;
+    height:390px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.carousel .imgList li a img{
+	width:100%;
+	height: 100%;
+}
+.carousel .imgList li:first-child{
+    display: block;
+}
+.carousel .btns a{
+    width: 30px;
+    height: 70px;
+    position: absolute;
+    top:50%;
+    margin-top: -70px;
+    color:#fff;
+    background-color: rgba(0,0,0,0);
+    font-size: 40px;
+    text-align: center;
+}
+.carousel .btns a.leftBtn{
+    left:160px;
+    line-height: 70px;
+}
+.carousel .btns a.rightBtn{
+    right:160px;
+    line-height: 70px;
+}
+ .carousel .circles{
+    width: 120px;
+    height: 20px;
+    position: absolute;
+    bottom: 20px;
+    right:150px;
+    margin-left: -60px;
+}
+.carousel .circles ol li{
+    float: left;
+    width: 12px;
+    height: 12px;
+    margin: 0px 5px;
+    background-color: #ccc;
+    color:#fff;
+    text-align: center;
+    border-radius: 50%;
+}
+.carousel .circles ol li.cur{
+    background-color: #fff;
+    color:#000;
+}
+
+/*购票*/
+
+/*背景*/
+.ticket .search{
+	height: 76px;
+	width: 100%;
+	background-color: #333333;
+	position: relative;
+}
+
+.ticket .search .local .place{
+	color: #fff;
+}
+
+.ticket .search .local .place span{
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 76px;
+}
+.ticket .search .local .place .replace{
+	font-size: 14px;
+	color: #fff;
+	padding-left: 10px;
+}
+.ticket .search .local .place .placelist{
+	width: 590px;
+	height: 300px;
+	background-color: #fff;
+	border-radius: 10px 10px 5px 5px;
+	border: 1px solid #eee;
+	position: absolute;
+	display: none;
+	position: relative;
+	z-index: 1;
+}
+.ticket .search .local .place .placelist .nav{
+	width: 590px;
+	height: 45px;
+	display: block;
+	padding-left: 10px;
+	background-color: #fff;
+	border-radius: 10px 10px 0px 0px;
+	border-top: 1px solid #eee;
+}
+.ticket .search .local .place .placelist .nav li {
+	width: 50px;
+	float: left;
+	color: #222;
+	line-height: 45px;
+}
+.ticket .search .local .place .placelist .nav .last{
+	position: absolute;
+	height: 30px;
+	width: 250px;
+	right: 20px;
+}
+.ticket .search .local .place .placelist .nav li input{
+	height: 30px;
+	width: 250px;
+	border-radius: 15px;
+	margin-right:100px;
+}
+.ticket .search .local .place .placelist .hot{
+	height: 255px;
+	width: 590px;
+	border-radius:10px 10px 0px 0px;
+}
+.ticket .search .local .place .placelist .hot li{
+	height: 20%;
+	width: 12%;
+	border-radius:10px 10px 0px 0px;
+	float: left;
+	line-height: 50px;
+	text-align: center;
+}
+.ticket .search .local .place .placelist .hot li a{
+	width: 100%;
+	color: #222;
+	text-align: center;
+}
+.ticket .search .local .online .a{
+	height: 36px;
+	width: 179px;
+	position: absolute;
+	left:410px;
+	top:50%;
+	margin-top: -18px;
+	line-height: 36px;
+	text-indent: 1em;
+	background: url('../imgs/1.png') no-repeat center;
+}
+.ticket .search .local .online .b{
+	height: 36px;
+	width: 179px;
+	position: absolute;
+	left:600px;
+	top:50%;
+	margin-top: -18px;
+	line-height: 36px;
+	text-indent: 1em;
+	background: url('../imgs/1.png') no-repeat center;
+}
+.ticket .search .local .online .c{
+	height: 36px;
+	width: 179px;
+	position: absolute;
+	left:785px;
+	top:50%;
+	margin-top: -18px;
+	line-height: 36px;
+	text-indent: 1em;
+	background: url('../imgs/2.png') no-repeat center;
+}
+.ticket .search .local .online .d{
+	height: 36px;
+	width: 179px;
+	border-radius: 18px;
+	background-color: #fff;
+	position: absolute;
+	left:970px;
+	top:50%;
+	margin-top: -18px;
+	line-height: 36px;
+	text-indent: 1em;
+}
+.ticket .search .local .online .filmlist{
+	width: 250px;
+	height: 400px;
+	background-color: #fff;
+	border-radius: 10px 10px 5px 5px;
+	border: 1px solid #eee;
+	position: absolute;
+	display: none;
+	position: relative;
+	z-index: 1;
+}
+/*选电影*/
+.ticket .search .local .online .filmlist input{
+	height: 40px;
+	width: 220px;
+	border-radius: 20px;
+	border: 1px solid #eee;
+	margin: 10px auto;
+}
+.ticket .search .local .online .filmlist ul{
+	height: 320px;
+	width: 100%;
+}
+
+.ticket .search .local .online .filmlist ul li{
+	height: 32px;
+	width: 100%;
+	line-height: : 32px;
+}
+.ticket .search .local .online .filmlist ul li:hover{
+	background-color: rgba(242,242,242,.5);
+	color: #027FC1;
+
+}
+.ticket .search .local .online .filmlist ul li a{
+	display: block;
+	height: 32px;
+	width: 180px;
+	line-height:35px;
+	float:left;
+}
+.ticket .search .local .online .filmlist ul li span{
+	/*display: block;*/
+	width: 30px;
+	height: 23px;
+	background-color: #68991B;
+	/*float: left;*/
+	color: white;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 23px;
+	text-align: center;
+
+}
+/*选影院*/
+.ticket .search .local .online .beijinglist{
+	width: 600px;
+	height: 400px;
+	background-color: #fff;
+	border-radius: 10px 10px 5px 5px;
+	border: 1px solid #eee;
+	position: absolute;
+	z-index: 1;
+	display: none;
+}
+.ticket .search .local .online .beijinglist .beijingTop{
+	width: 100%;
+	height: 50px;
+	border-bottom: 1px solid #ccc;
+}
+.ticket .search .local .online .beijinglist .beijingbum{
+	width: 100%;
+	height: 350px;
+	overflow: scroll;
+}
+.ticket .search .local .online .beijinglist input{
+	height: 30px;
+	width: 280px;
+	border-radius: 20px;
+	border: 1px solid #eee;
+	margin: 10px 30px;
+	float: left;
+}
+.ticket .search .local .online .beijinglist .beijingTop div{
+	height: 50px;
+	margin-right: 30px;
+	line-height: 50px;
+	float: right;
+	
+}
+.ticket .search .local .online .beijinglist .changping{
+	height: 30%;
+	width: 100%;
+}
+.ticket .search .local .online .beijinglist .changping span{
+	display: block;
+	float: left;
+	height: 100%;
+	width: 20%;
+}
+.ticket .search .local .online .beijinglist .changping ul{
+	height: 100%;
+	width: 80%;
+	float: left;
+}
+.ticket .search .local .online .beijinglist .changping ul li{
+	height: 30%;
+	width: 50%;
+	float: left;
+	text-align: left;
+	font-size: 12px;
+}
+/*朝阳区*/
+.ticket .search .local .online .beijinglist .chaoyang{
+	height: 30%;
+	width: 100%;
+}
+.ticket .search .local .online .beijinglist .chaoyang span{
+	display: block;
+	float: left;
+	height: 100%;
+	width: 20%;
+}
+.ticket .search .local .online .beijinglist .chaoyang ul{
+	height: 100%;
+	width: 80%;
+	float: left;
+}
+.ticket .search .local .online .beijinglist .chaoyang ul li{
+	height: 30%;
+	width: 50%;
+	float: left;
+	text-align: left;
+	font-size: 12px;
+}
+
+.hotfilm {
+	width: 100%;
+	height: 710px;
+	background-color: #F2F2F2;
+}
+.hotfilm .box1{
+	position:relative;	
+}
+.hotfilm .box1 .box2-top{
+	width: 100%;
+	height: 106px;
+	border-bottom: 1px solid #ccc
+}
+.hotfilm .box1 .box2-top .orange{
+	display: block;
+	height: 50px;
+	width: 10px;
+	float: left;
+	background-color: orange;
+	margin-top: 55px;
+}
+.hotfilm .box1 .box2-top p{
+	display: block;
+	width: 175px;
+	font-size: 19px;
+	line-height: 106px;
+	float: left;
+	margin-top: 25px;
+}
+.hotfilm .box1 .box2-top p span{
+	font-weight: bold;
+	font-size: 28px;
+}
+.hotfilm .box1 .box2-top ul{
+	float: left;
+	width: 380px;
+	margin-top: 20px;
+}
+.hotfilm .box1 .box2-top ul li{
+	float: left;
+	margin:50px 2px;
+	text-align: center;
+	width: 10%;
+}
+.hotfilm .box1 .box2-top ul li a{
+	font-size:14px;
+	float: left;
+	line-height: 20px;
+	border-right:1px solid #ccc;
+	display: block;
+	margin:0 auto;
+}
+.hotfilm .box1 .box2-top input{
+	height: 35px;
+	width: 225px;
+	border-radius:17.5px;
+	float: right;
+	margin:55px 20px 0px 0px;
+	border:1px solid #ccc;
+}
+
+.hotfilm .box1 .box2-bottom{
+	margin-top: 20px;
+	height: 440px;
+	float: left;
+	position: relative;
+}
+.hotfilm .box1 .box2-bottom .box3-left{
+	width: 272px;
+	height: 554px;
+	/*position: absolute;
+	left: 0;*/
+	float: left;
+}
+.hotfilm .box1 .box2-bottom .box3-left h2{
+	font-size: 20px;
+	position: absolute;
+	left: 55px;
+	top:350px;
+}
+.hotfilm .box1 .box2-bottom .box3-left span{
+	display: block;
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	background-color: #5CAD2C;
+	color: #fff;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 10px;
+}
+.hotfilm .box1 .box2-bottom .box3-left a{
+	display: block;
+	position: absolute;
+	left: 55px;
+	top:400px;
+}
+.hotfilm .box1 .box2-bottom .box3-left .zhushi{
+	display: block;
+	position: absolute;
+	left: 0px;
+	top:420px;
+	font-size: 20px;
+	color: #5CAD2C;
+}
+.hotfilm .box1 .box2-bottom .box3-left .num{
+	position: absolute;
+	left: 0px;
+	top:480px;
+	font-size: 35px;
+	font-weight: bold;
+}
+.hotfilm .box1 .box2-bottom .box3-left .num b{
+	font-size: 12px;
+}
+.hotfilm .box1 .box2-bottom .box3-left button{
+	width: 165px;
+	height: 48px;
+	background-color: #0081BB;
+	font-size: 25px;
+	font-weight: bold;
+	color:#fff;
+	line-height: 50px;
+	text-align: center;
+	border-radius: 25px;
+	position: absolute;
+	left: 90px;
+	top:480px;
+	border:none;
+}
+.hotfilm .box1 .box2-bottom .box3-right{
+	width: 700px;
+	height: 554px;
+	margin-left: 28px;
+	float: right;
+	top:126px;
+}
+.hotfilm .box1 .box2-bottom .box3-right ul{
+	height:100%;
+	width: 100%;
+	float: right;
+}
+.hotfilm .box1 .box2-bottom .box3-right ul li{
+	height: 165px;
+	position: relative;
+	width: 330px;
+	float: left;
+}
+.hotfilm .box1 .box2-bottom .box3-right ul li img{
+	width: 102px;
+	height: 142px;
+	float: left;
+	margin-right: 8px;
+}
+.hotfilm .box1 .box2-bottom .box3-right ul li .title{
+	display: block;
+	font-size: 20px;
+	line-height: 20px;
+	margin-left: 10px;
+}
+.hotfilm .box1 .box2-bottom .box3-right ul li span{
+	width: 30px;
+	height: 20px;
+	font-size: 20px;
+	line-height: 20px;
+	margin-left: 10px;
+	background-color: #559C1A;
+	position: absolute;
+	left: 65px;
+	bottom:20px;
+	color: #fff;
+	font-size: 15px;
+	text-align: center;
+}
+.hotfilm .box1 .box2-bottom .box3-right ul li .title{
+	display: block;
+	font-size: 20px;
+	line-height: 20px;
+}
+.hotfilm .box1 .box2-bottom .box3-right ul li .people{
+	display: block;
+	font-size: 16px;
+	line-height: 20px;
+	color: #559C1A;
+}
+.hotfilm .box1 .box2-bottom .box3-right ul li button{
+	height: 25px;
+	width: 95px;
+	background-color: #007CBC;
+	color: #fff;
+	border:none;
+	border-radius: 12.5px;
+}
+
+/*搜索影院*/
+
+.select .box1{
+	position:relative;	
+}
+.select .box1 .box2-top{
+	width: 100%;
+	height: 106px;
+	border-bottom: 1px solid #ccc
+}
+.select .box1 .box2-top .orange{
+	display: block;
+	height: 50px;
+	width: 10px;
+	float: left;
+	background-color: orange;
+	margin-top: 55px;
+}
+.select .box1 .box2-top p{
+	display: block;
+	width: 175px;
+	font-size: 19px;
+	line-height: 106px;
+	float: left;
+	margin-top: 25px;
+}
+.select .box1 .box2-top p span{
+	font-weight: bold;
+	font-size: 28px;
+}
+.select .box1 .box2-top ul{
+	float: left;
+	width: 490px;
+	margin-top: 20px;
+}
+.select .box1 .box2-top ul li{
+	float: left;
+	margin:50px 2px;
+	text-align: center;	
+}
+.select .box1 .box2-top ul li a,input{
+	font-size:14px;
+	float: left;
+	line-height: 20px;
+	border-right:1px solid #ccc;
+	display: block;
+	margin:0 auto;
+	width: 30px;
+}
+.select .box1 .box2-top ul li a{
+	width: 100px;
+}
+.select .box1 .box2-top .search{
+	height: 35px;
+	width: 225px;
+	border-radius:17.5px;
+	float: right;
+	margin:55px 20px 0px 0px;
+	border:1px solid #ccc;
+}
+.select .box1 .box2-bottom {
+	position: relative;
+}
+.select .box1 .box2-bottom .left{
+	width: 680px;
+	float: left;
+}
+.select .box1 .box2-bottom .left ul{
+	width: 680px;
+	height: 160px;
+	border-bottom: 1px solid #ccc;
+}
+.select .box1 .box2-bottom .left li img{
+	position: absolute;
+	width: 102px;
+	height: 63px;
+	border: 1px solid #ccc;
+	left: 0px;
+	margin-top:50px;
+}
+.select .box1 .box2-bottom .left li h3{
+	display: block;
+	position: absolute;
+	left: 120px;
+	margin-top:50px;
+}
+.select .box1 .box2-bottom .left li:nth-child(3){
+	position: absolute;
+	left: 120px;
+	margin-top:90px;
+}
+.select .box1 .box2-bottom .left li:nth-child(4){
+	position: absolute;
+	left: 560px;
+	margin-top:80px;
+	color: orange;
+	font-size: 12px;
+}
+.select .box1 .box2-bottom .left li:nth-child(4) span{
+	font-size: 30px;
+}
+.select .box1 .box2-bottom .left li:nth-child(5) button{
+	height: 30px;
+	width: 110px;
+	background-color: #007CBC;
+	color: #fff;
+	border:none;
+	border-radius: 12.5px;
+	position: absolute;
+	left: 560px;
+	margin-top: 120px;
+}
+.select .box1 .box2-bottom .right {
+	float: right;
+}
+.select .lastImg img{
+	display: block;
+	width: 100%;
+	margin-bottom: 90px;
+}

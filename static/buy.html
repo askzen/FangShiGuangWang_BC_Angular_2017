@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Mtime时光网</title>
+	<link rel="preload" href="css/buy.css" as="style">
+	<link rel="stylesheet" type="text/css" href="css/header.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/buy.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+</head>
+<body ng-app="myApp">
+	<!-- 头部 -->
+	<header ng-include="'view/header.tpl'"></header>
+	<!-- 轮播图 -->
+	 <div class="carousel" id="carousel">
+        <div class="imgList" id="imgList">
+            <ul>
+                <li>
+                    <a href="javascript:void(0);">
+                        <img src="https://img5.mtime.cn/mg/2018/06/12/145232.98799165.jpg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);">
+                        <img src="https://img5.mtime.cn/mg/2018/05/11/094030.45344019.jpg" alt="">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="btns">
+            <a href="javascript:void(0);" class="leftBtn" id="leftBtn">&lt;</a>
+            <a href="javascript:void(0);" class="rightBtn" id="rightBtn">&gt;</a>
+        </div>
+        <div class="circles" id="circles">
+            <ol>
+                <li class="cur"></li>
+                <li></li>
+            </ol>
+        </div>
+    </div>
+
+    <!-- 购票 -->
+	<div class="ticket">
+		<div class="search">
+			<div class="local inner">
+				<div class="place">
+					<span>北京</span>
+					<span class="replace" id="replace" href="">切换城市</span>
+					<div class= "placelist" id ="placelist">
+						<ul class="nav">
+							<li>热门</li>
+							<li>A-G</li>
+							<li>H-L</li>
+							<li>M-T</li>
+							<li>W-Z</li>
+							<li class='last'>
+								<input 
+								type="text"
+								placeholder="直接输入城市或城市拼音" 
+								>
+							</li>
+						</ul>
+						<ul class="hot">
+							<li><a href="javascript:0">北京</a></li>
+							<li><a href="javascript:0">上海</a></li>
+							<li><a href="javascript:0">广州</a></li>
+							<li><a href="javascript:0">深圳</a></li>
+							<li><a href="javascript:0">重庆</a></li>
+							<li><a href="javascript:0">天津</a></li>
+							<li><a href="javascript:0">成都</a></li>
+							<li><a href="javascript:0">郑州</a></li>
+							<li><a href="javascript:0">西安</a></li>
+							<li><a href="javascript:0">杭州</a></li>
+							<li><a href="javascript:0">武汉</a></li>
+							<li><a href="javascript:0">东莞</a></li>
+							<li><a href="javascript:0">合肥</a></li>
+							<li><a href="javascript:0">济南</a></li>
+							<li><a href="javascript:0">青岛</a></li>
+							<li><a href="javascript:0">苏州</a></li>
+							<li><a href="javascript:0">佛山</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="online" id="online">
+					<div class="a" id= "a">
+					选电影
+					<div class="filmlist" id="filmlist">
+						<input
+						 type="text"
+						 placeholder=" 输入影片名称快速定位"
+						>
+						<ul>
+							<li>
+								<a href="">侏罗纪世界2</a>
+								<span>7.3</span>
+							</li>
+							<li>
+								<a href="">猛虫过江</a>
+								<span>4.7</span>
+							</li>
+							<li>
+								<a href="">泄密者</a>
+								<span>5.9</span>
+							</li>
+							<li>
+								<a href="">龙虾刑警</a>
+								
+							</li>
+							<li>
+								<a href="">超时空同居</a>
+								<span>6.8</span>
+							</li>
+							<li>
+								<a href="">超人总动员2</a>
+								
+							</li>
+							<li>
+								<a href="">复仇者联盟3</a>
+								<span>8.1</span>
+							</li>
+							<li>
+								<a href="">动物世界</a>
+								
+							</li>
+							<li>
+								<a href="">厕所英雄</a>
+								<span>7.3</span>
+							</li>
+							<li>
+								<a href="">第七个小矮人</a>
+								
+							</li>
+						</ul>
+					</div>
+					</div>
+					<div class="b" id="b">
+					选影院
+						<div class="beijinglist" id="beijinglist">
+							<div class="beijingTop">
+								<input
+						 			type="text"
+						 			placeholder="输入影院名称快速定位"
+								>
+								<div>当前共有136家影院</div>
+							</div>
+							<div class="beijingbum">
+								<div class="changping">
+								<span>昌平区</span>
+								<ul>
+									<li>首都电影院昌平店</li>
+									<li>中影国际影城北京昌平永旺店</li>
+									<li>北京万达影城昌平保利光魔店</li>
+									<li>北京万达影城天通苑龙德广场店</li>
+									<li>保利国际影城北京龙旗广场店</li>
+									<li>大地数字影院-北京昌平菓岭假日广场</li>
+								</ul>
+							</div>
+							<div class="chaoyang">
+								<span>朝阳区</span>
+								<ul>
+									<li>北京百丽宫影城国贸店</li>
+									<li>CGV星星影城（颐堤港店）</li>
+									<li>新影联·华谊兄弟影院</li>
+									<li>金逸国际影城（朝阳大悦城店）</li>
+									<li>大地影院—十里河铭泽店</li>
+									<li>北京紫光影城</li>
+									<li>劲松电影院</li>
+									<li>星环影城立水桥店</li>
+									<li>中国科技馆影院</li>
+									<li>北京耀莱成龙国际影城（慈云寺店）</li>
+									<li>UME国际影城（双井）</li>
+									<li>北京活力天宝国际影城</li>
+									<li>北京东都国际影城</li>
+									<li>橙天嘉禾影城北京凤凰汇店</li>
+									<li>鲁信影城北京立水桥店</li>
+									<li>北京CBD万达广场店</li>
+									<li>北京红星太平洋影城</li>
+								</ul>
+							</div>
+							</div>
+						</div>
+					</div>
+					<div class="c">选时间</div>
+					<div class="d">选座购票</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 正在热映 -->
+	<div class="hotfilm">
+		<div class="box1 inner">
+			<div class="box2-top">
+				<span class="orange"></span>
+				<p>正在热映<span>43</span>部</p>
+				<ul>
+					<li><a href="">全部</a></li>
+					<li><a href="">3 D</a></li>
+					<li><a href="">IMAX</a></li>
+					<li><a href="">喜剧</a></li>
+					<li><a href="">动作</a></li>
+					<li><a href="">冒险</a></li>
+					<li><a href="">悬疑</a></li>
+					<li><a href="">科幻</a></li>
+				</ul>
+				<input 
+					type="text"
+					placeholder="搜索影片"
+				>
+			</div>
+			<div class="box2-bottom">
+				<div class="box3-left">
+					<img src="https://img5.mtime.cn/mt/2018/05/25/100000.65855294_270X360X4.jpg" alt="">
+							<h2>侏罗纪世界2</h2>
+							<span>总评分7.3分</span>
+							<a href="">128分钟 - 动作 / 冒险</a>
+							<p class="zhushi">恐龙纪元震撼回归 特效全面升级</p>
+							<p class="num">28<b>元起</b></p>
+							<button>选座购票</button>
+				</div>
+				<div  ng-controller="myCtrl" class="box3-right">
+					<ul>
+						<li ng-repeat="item in records">
+							<img ng-src="{{item.url}}" alt="">
+							<p  class="title" href="">{{item.name}}</p>
+							<span>{{item.score}}</span>
+							<a class="time" href="">{{item.time}}</a>
+							<p class= "play" href="">{{item.play}}</p>
+							<p class="people">{{item.people}}</p>
+							<button>{{item.button}}</button>
+						</li>
+					</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+
+	<!-- select -->
+	<div class="select">
+		<div class="box1 inner">
+			<div class="box2-top">
+				<span class="orange"></span>
+				<p>北京<span>203</span>家影院</p>
+				<ul>
+					<li><a href="">商圈及地铁沿线</a></li>
+					<li><input type="checkbox">购票</li>
+					<li><input type="checkbox">停车场</li>
+					<li><input type="checkbox">3 D</li>
+					<li><input type="checkbox">动作</li>
+					<li><input type="checkbox">IMAX</li>
+					<li><input type="checkbox">4DX</li>
+				</ul>
+				<input  
+					type="text"
+					class="search" 
+					placeholder="搜索影院"
+				>
+			</div>
+			<div class="box2-bottom">
+				<div ng-controller="myCtrl-2" class="left">
+					<ul ng-repeat="item in recordss">
+						<li><img ng-src="{{item.url}}" alt=""></li>
+						<li><h3>{{item.name}}</h3></li>
+						<li>{{item.place}}</li>
+						<li>￥<span>{{item.price}}</span> 元起</li>
+						<li><button>{{item.button}}</button></li>
+						<li class="bg">{{item.bg}}</li>
+					</ul>
+				</div>
+				<div class="right">
+					<img src="imgs/0f0007LMjUnBWhwU96ppkf.jpg" alt="">
+				</div>
+			</div>
+	</div>
+	<div class="lastImg inner">
+		<img class="inner" src="imgs/0f000PbmnJAozTSw7kBAV0.jpg" alt="">
+	</div>
+<!-- 引入底部公共模块 -->
+	<footer ng-include="'view/footer.tpl'"></footer>
+
+<script type="text/javascript" src="js/jquery-1.12.2.js"></script>
+<script type="text/javascript" src="js/angular.js"></script>
+<!-- 1 引入路由文件 -->
+<script type="text/javascript" src="js/angular-route.js"></script>
+<script type="text/javascript" src="js/buy.js"></script>
+<script type="text/javascript" src="js/login.js"></script>
+<script type="text/javascript">
+	var app = angular.module("myApp",[]);
+		app.controller("myCtrl" ,function($scope){
+			$scope.records = [
+				{
+					url:'http://img5.mtime.cn/mt/2018/06/05/091818.46413077_100X140X4.jpg',
+					score:4.8,
+					name:'猛虫过江',
+					time:'100分钟 - 喜剧 / 动作',
+					play:'139家影院上映767场',
+					people:'小沈阳和潘斌龙勇闯台湾五湖帮',
+					button:'选座购票'
+				},
+
+				{
+					url:'http://img5.mtime.cn/mt/2018/06/12/144615.15753425_100X140X4.jpg',
+					score:5.9,
+					name:'泄密者',
+					time:'102分钟 - 犯罪 / 动作',
+					play:'138家影院上映465场',
+					people:'张智霖吴镇宇对抗病毒危机',
+					button:'选座购票'
+				},
+
+				{
+					url:'http://img5.mtime.cn/mt/2018/05/05/175421.64702950_100X140X4.jpg',
+					score:6.8,
+					name:'超时空同居',
+					time:'101分钟 - 奇幻 / 喜剧',
+					play:'85家影院上映326场',
+					people:'雷佳音佟丽娅时空交错同居一室',
+					button:'选座购票'
+				},
+
+				{
+					url:'http://img5.mtime.cn/mt/2018/03/30/101316.99752366_100X140X4.jpg',
+					score:8.1,
+					name:'复仇者联盟3：无限战争',
+					time:'150分钟 - 动作 / 冒险',
+					play:'85家影院上映326场',
+					people:'复联全员与灭霸巅峰一役引人注目',
+					button:'选座购票'
+				},
+
+				{
+					url:'http://img5.mtime.cn/mt/2018/05/31/190850.56463522_100X140X4.jpg',
+					score:7.3,
+					name:'厕所英雄',
+					time:'101分钟 - 奇幻 / 喜剧',
+					play:'76家影院上映207场',
+					people:'雷佳音佟丽娅时空交错同居一室',
+					button:'选座购票'
+				},
+
+				{
+					url:'http://img5.mtime.cn/mt/2018/05/30/103453.69566094_100X140X4.jpg',
+					score:6.8,
+					name:'第七个小矮人',
+					time:'101分钟 - 奇幻 / 喜剧',
+					play:'93家影院上映172场',
+					people:'印度话题电影改变6亿女性命运',
+					button:'选座购票'
+				}
+			]
+		});
+		app.controller("myCtrl-2",function($scope){
+			$scope.recordss = [
+				{
+					url:"http://img31.mtime.cn/t/2016/03/11/112143.59422675_102X63X3.jpg",
+					name:"首都电影院（中华店)",
+					place:"北京市西城区天桥南大街3号楼一层、二层（天桥艺术..",
+					price:"35",
+					button:"在线选座",
+					bg:""
+
+				},
+				{
+					url:"http://img31.mtime.cn/t/2016/03/11/112143.59422675_102X63X3.jpg",
+					name:"首都电影院（中华店)",
+					place:"北京市昌平区南环路悦荟万科广场8层",
+					price:"45",
+					button:"在线选座",
+					bg:""
+
+				},
+				{
+					url:"http://img31.mtime.cn/t/2015/01/05/121937.24341737_102X63X3.jpg",
+					name:"CGV星聚汇影城（北京顺义店)",
+					place:"北京市西城区天桥南大街3号楼一层、二层（天桥艺术..",
+					price:"40",
+					button:"在线选座",
+					bg:""
+				},
+				{
+					url:"http://img31.mtime.cn/t/2014/08/14/161036.99867186_102X63X3.jpg",
+					name:"北京完美世界影城四道口店（原17.5影城）",
+					place:"北京市西城区天桥南大街3号楼一层、二层（天桥艺术..",
+					price:"34.9",
+					button:"在线选座",
+					bg:""
+				}
+			]
+		})
+</script>
+<script type="text/javascript" src="js/common.js"></script>
+</body>
+</html>

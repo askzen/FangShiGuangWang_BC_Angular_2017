@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="css/header.css">
+	<link rel="stylesheet" type="text/css" href="css/footer.css">
+</head>
+<body ng-app="mainpage" ng-controller="header" style="user-select:none">
+	<!-- 头部引入 -->
+	<header ng-include="'view/header.tpl'"></header>
+	<!-- 首页部分 -->
+	<div class="inner">
+		<div class="top-img">
+			<div class="search dropdown">
+				<span class="dropdown-toggle" data-toggle="dropdown">全部
+				</span>
+				<!-- bs组件下拉菜单 -->
+				<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+					<li>全部</li>
+					<li>电影</li>
+					<li>影人</li>
+					<li>影院</li>
+					<li>商品</li>
+					<li>新闻</li>
+  				</ul>
+				<input type="text" ng-focus="focus($event)" style="border:none">
+				<span id="glass"></span>
+			</div>
+		</div>
+		<div class="carousel">
+			<ul class="pics">
+				<li class="cur"></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+			<div class="btns">
+				<a class="left" ng-click="left($event)">&lt;</a>
+				<a class="right" ng-click="right($event)">&gt;</a>
+			</div>
+			<ul class="list" ng-click="list($event)">
+				<li class="cur"></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+		<div class="hot-point">
+			<h3>今日热点</h3>
+			<ul>
+				<li>时光对话</li>
+				<li>产业聚焦</li>
+				<li>电视情报</li>
+				<li>全球拾趣</li>
+			</ul>
+		</div>
+		<div class="hot-content">
+			<div class="left-content">
+				<ul>
+					<li ng-repeat="item in content">
+						<img ng-src="imgs/hot{{$index + 1}}.jpg">
+						<h4>{{item.title}}</h4>
+						<p>{{item.main}}</p>
+					</li>
+				</ul>
+			</div>
+			<div class="right-content">
+				<img src="imgs/hotpoint1.jpg">
+				<h4>万达之夜</h4>
+				<ul>
+					<li><h4>更多直播</h4></li>
+					<li>
+					征途之夜发布会
+					<p>2018年06月18日</p>
+					</li>
+					<li>
+					功夫联盟定档发布会
+					<p>2018年06月18日</p>
+					</li>
+					<li>
+					阿修罗发布会
+					<p>2018年06月18日</p>
+					</li>
+				</ul>
+			</div>
+			<a href="javascript:0">查看更多</a>
+		</div>
+		<div class="sell">
+			<div class="sell-point">
+				<h3>正版商城</h3>
+				<ul>
+					<li>新品登录</li>
+					<li>热销爆款</li>
+					<li>折扣促销</li>
+					<li>超前预售</li>
+				</ul>
+			</div>
+			<div class="sell-carousel">
+				<ul class="first-sell cur">
+					<li ng-repeat="li in firstArr">
+						<img ng-src="imgs/page{{li}}.jpg">
+					</li>
+				</ul>
+				<ul class="last-sell">
+					<li ng-repeat="li in lastArr">
+						<img ng-src="imgs/page{{li}}.jpg">
+					</li>
+				</ul>
+				<a class="left" ng-click="sell($event)">&lt;</a>
+				<a class="right" ng-click="sell($event)">&gt;</a>
+			</div>
+			<!-- 正版商城下边的导航栏 -->
+			<ul class="small" ng-style="{'listStyle':'none'}">
+				<li ng-repeat="list in small" ng-style="{'background':'url(imgs/small{{$index + 1}}.jpg) no-repeat'}">
+					<h4>{{list.title}}</h4>
+					<ul ng-style="{'listStyle':'none'}">
+						<li>{{list.main1}}</li>
+						<li>{{list.main2}}</li>
+						<li>{{list.main3}}</li>
+						<li>{{list.main4}}</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<!-- 全球拾取 -->
+		<div class="interesting">
+			<h3>全球拾趣</h3>
+			<ul class="inter-content">
+				<li ng-repeat="item in inter">
+					<img ng-src="imgs/in{{$index + 1}}.jpg">
+					<h3>
+						<a href="javascript:0">{{item.title}}</a>
+					</h3>
+					<p>
+						<a href="javascript:0">{{item.content}}</a>
+					</p>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- 足部引入 -->
+	<footer ng-include="'view/footer.tpl'"></footer>
+
+	<script type="text/javascript" src="js/jquery-1.12.2.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>	
+	<script type="text/javascript" src="js/angular.js"></script>	
+	<script type="text/javascript" src="js/angular-route.js"></script>
+	<script type="text/javascript">
+		var app = angular.module("mainpage",[]);
+		app.controller('header', ($scope) => {
+			$scope.index = 0;
+			$scope.focus = function(e){
+				var $input = $(e.target);
+				$input.parent().hover();
+			}
+			// 信号量
+			var index = 0;
+			// 动画锁
+			$scope.lock = true
+			// 左点击事件
+			$scope.left = function(e){
+				if ($scope.lock) {
+					$scope.lock = false;
+					let $pics = $(e.target).parent().siblings(".pics").children();
+					let $list = $(e.target).parent().siblings(".list").children();
+					$($pics[index]).fadeOut("100",() => {
+						index--;
+						if (index < 0) {
+							index = $pics.length - 1;
+						}
+						$($pics[index]).fadeIn("100",() => {
+							$($pics[index]).addClass("cur").siblings().removeClass("cur");
+							$($list[index]).addClass("cur").siblings().removeClass("cur");
+							$scope.lock = true;
+						})
+					})
+				}
+			};
+			//右点击事件
+			$scope.right = function(e){
+				if ($scope.lock) {
+					$scope.lock = false;
+					let $pics = $(e.target).parent().siblings(".pics").children();
+					let $list = $(e.target).parent().siblings(".list").children();
+					$($pics[index]).fadeOut("100",() => {
+						index++;
+						if (index > $pics.length - 1) {
+							index = 0;
+						}
+						$($pics[index]).fadeIn("100",() => {
+							$($pics[index]).addClass("cur").siblings().removeClass("cur");
+							$($list[index]).addClass("cur").siblings().removeClass("cur");
+							$scope.lock = true;
+						})
+					})    
+				}
+			};
+			// 按钮事件
+			$scope.list = function(e){
+				if ($scope.lock) {
+					let target = $(e.target);
+					let $pics = $(e.target).parent().siblings(".pics").children();
+					$($pics[index]).fadeOut("100",() => {
+						// 让index等于当前li
+						index = target.parent().children().index(target);
+						$($pics[index]).fadeIn("100",() => {
+							$($pics[index]).addClass("cur").siblings().removeClass("cur");
+							target.addClass("cur").siblings().removeClass("cur");
+							$scope.lock = true;
+						})
+					})
+				}
+			}
+			// 热点事件循环
+			$scope.content = [
+				{
+					title : "姜文新片拍抗战，对人世间负责",
+					main : "《邪不压正》爆角色海报五大主演亮相"
+				},
+				{
+					title : "姜文新片拍抗战，对人世间负责",
+					main : "《邪不压正》爆角色海报五大主演亮相"
+				},
+				{
+					title : "姜文新片拍抗战，对人世间负责",
+					main : "《邪不压正》爆角色海报五大主演亮相"
+				},
+				{
+					title : "姜文新片拍抗战，对人世间负责",
+					main : "《邪不压正》爆角色海报五大主演亮相"
+				},
+				{
+					title : "姜文新片拍抗战，对人世间负责",
+					main : "《邪不压正》爆角色海报五大主演亮相"
+				},
+				{
+					title : "姜文新片拍抗战，对人世间负责",
+					main : "《邪不压正》爆角色海报五大主演亮相"
+				}
+			];
+			// 中部图片循环
+			$scope.firstArr = [1,2,3,4,5,6];
+			$scope.lastArr = [7,8,9,10,11,12];
+			// 正版商城部分切换
+			$scope.sell = function(e){
+				var $list = $(e.target).parent().find("ul.cur");
+				$list.removeClass("cur").siblings("ul").addClass("cur");
+			}
+			// 正版商城部分数据
+			$scope.small = [
+				{
+					title : "居家日常",
+					main1 : "抱枕靠垫",
+					main2 : "创意文具",
+					main3 : "水杯水壶",
+					main4 : "更多>>"
+				},
+				{
+					title : "居家日常",
+					main1 : "抱枕靠垫",
+					main2 : "创意文具",
+					main3 : "水杯水壶",
+					main4 : "更多>>"
+				},
+				{
+					title : "居家日常",
+					main1 : "抱枕靠垫",
+					main2 : "创意文具",
+					main3 : "水杯水壶",
+					main4 : "更多>>"
+				},
+				{
+					title : "居家日常",
+					main1 : "抱枕靠垫",
+					main2 : "创意文具",
+					main3 : "水杯水壶",
+					main4 : "更多>>"
+				}
+			];
+			// 全球拾取部分
+			$scope.inter = [
+				{
+					title : '“狄仁杰四大天王”亢龙闵喜提代言人',
+					content : '“机制人士专用”赵又廷调侃：林更新用不了'
+				},
+				{
+					title : '“狄仁杰四大天王”亢龙闵喜提代言人',
+					content : '“机制人士专用”赵又廷调侃：林更新用不了'
+				},
+				{
+					title : '“狄仁杰四大天王”亢龙闵喜提代言人',
+					content : '“机制人士专用”赵又廷调侃：林更新用不了'
+				},
+				{
+					title : '“狄仁杰四大天王”亢龙闵喜提代言人',
+					content : '“机制人士专用”赵又廷调侃：林更新用不了'
+				},
+				{
+					title : '“狄仁杰四大天王”亢龙闵喜提代言人',
+					content : '“机制人士专用”赵又廷调侃：林更新用不了'
+				},
+				{
+					title : '“狄仁杰四大天王”亢龙闵喜提代言人',
+					content : '“机制人士专用”赵又廷调侃：林更新用不了'
+				},
+				{
+					title : '“狄仁杰四大天王”亢龙闵喜提代言人',
+					content : '“机制人士专用”赵又廷调侃：林更新用不了'
+				},
+				{
+					title : '“狄仁杰四大天王”亢龙闵喜提代言人',
+					content : '“机制人士专用”赵又廷调侃：林更新用不了'
+				}
+			];
+		})
+
+
+	</script>
+	<script type="text/javascript" src="js/common.js"></script>
+</body>
+</html>

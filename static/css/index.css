@@ -1,0 +1,440 @@
+.inner {
+	width: 1200px;
+	margin: 0 auto 140px;
+}
+.top-img {
+	height: 90px;
+	padding-top: 25px;
+	background: url(../imgs/navtop.jpg);
+}
+/*搜索框*/
+.search {
+	position: relative;
+	width: 500px;
+	height: 40px;
+	margin: 0 auto;
+	padding-top: 10px;
+	padding-left: 25px;
+	border: 1px solid #e0e0e0;
+	border-radius: 20px;
+	line-height: 18px;
+	font-size: 14px;
+	color: #a5a5a5;
+	background-color: #fff;
+}
+/*放大镜*/
+.search::after {
+	content: "";
+	position: absolute;
+	top: 3px;
+    left: 440px;
+	width: 54px;
+	height: 32px;
+	border-radius: 30px;
+	background: url(../imgs/head.png) -98px -42px;
+}
+.search:hover::after {
+	background: url(../imgs/wihte.png) 18px 5px no-repeat;
+	background-color: #1e7dd7;
+}
+.search input {
+	border: none;
+	outline: none;
+	width: 330px;
+	height: 18px;
+}
+.search .dropdown-toggle {
+	position: relative;
+	padding-right: 30px;
+	margin-right: 20px;
+	border-right: 1px solid #a5a5a5;
+}
+/*搜索框小三角*/
+.search .dropdown-toggle::after {
+	content: "";
+	position: absolute;
+	top: 5px;
+    left: 36px;
+	width: 14px;
+    height: 6px;
+	background: url(../imgs/head.png) -150px 0px no-repeat;
+}
+
+/*搜索框下拉菜单样式*/
+.search .dropdown-menu {
+	width: 95px;
+	min-width: 95px;
+	padding: 0px;
+	margin: 0px;
+	border-radius: 0px;
+	color: black;
+	text-align: center;
+	line-height: 34px;
+}
+.search .dropdown-menu li{
+	height: 34px;
+	border-top: 1px solid #eee;
+	cursor: pointer;
+}
+.search .dropdown-menu li:hover {
+    background: #e5f2fc;
+    color: #267dd7;
+}
+/*轮播图部分*/
+.carousel {
+	position: relative;
+	width: 100%;
+	height: 375px;
+}
+.carousel ul {
+	list-style: none;
+}
+.pics {
+	width: 100%;
+	height: 360px;
+}
+.pics li {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 360px;
+	opacity: 0;
+}
+/*图片li*/
+.pics li.cur {
+	opacity: 1;
+}
+.pics li:nth-child(1) {
+	background-image: url("../imgs/lun1.jpg");
+}
+.pics li:nth-child(2) {
+	background-image: url("../imgs/lun2.jpg");
+}
+.pics li:nth-child(3) {
+	background-image: url("../imgs/lun3.jpg");
+}
+.pics li:nth-child(4) {
+	background-image: url("../imgs/lun4.jpg");
+}
+.pics li:nth-child(5) {
+	background-image: url("../imgs/lun5.jpg");
+}
+/*按钮*/
+.btns a {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	margin-top: -51px;
+	width: 48px;
+	height: 102px;
+	background-color: rgba(0, 0, 0, .5);
+	line-height: 102px;
+	font-size: 48px;
+	text-align: center;
+	color: #d0898c;
+	cursor: pointer;
+}
+.btns a.right {
+	left: unset;
+	right: 0px;
+}
+.btns a:hover {
+	text-decoration: none;
+}
+/*小圆点*/
+.carousel .list {
+	position: absolute;
+	top: 368px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 80px;
+	height: 7px;
+}
+.carousel .list li {
+	float: left;
+	width: 7px;
+	height: 7px;
+	border-radius: 50%;
+	background-color: #dbdbdb;
+	margin-right: 8px;
+	cursor: pointer;
+}
+.carousel .list li.cur {
+	width: 12px;
+	border-radius: 4px;
+	background-color: #267fd4;
+}
+/*热点部分*/
+.hot-point {
+	position: relative;
+	height: 120px;
+	padding-top: 50px;
+	border-bottom: 1px solid #e5e5e5;
+	text-align: center;
+}
+.hot-point ul {
+	position: absolute;
+	top: 110px;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: #fff;
+	padding-left: 0px;
+	list-style: none;
+	line-height: 18px;
+	height: 18px;
+}
+.hot-point ul li {
+	float: left;
+	width: 116px;
+	padding: 0 25px;
+	font-size: 16px;
+	border-right: 1px solid #e5e5e5;
+}
+.hot-point ul li:hover {
+	color: blue;
+}
+.hot-point ul li:last-child {
+	border-right: none;
+}
+.hot-point h3 {
+	font-size: 28px;
+}
+/*热点内容*/
+.hot-content {
+	position: relative;
+	margin-top: 25px;
+	margin-bottom: 80px;
+}
+.hot-content::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.hot-content>a {
+	position: absolute;
+	top: 430px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 158px;
+	height: 35px;
+	line-height: 35px;
+	border: 1px solid #000;
+	border-radius: 30px;
+	text-align: center;
+	text-decoration: none;
+	color: black;
+}
+.hot-content>a:hover {
+	background-color: blue;
+	color: white;
+	text-decoration: none;
+}
+.hot-content ul {
+	list-style: none;
+}
+.hot-content .left-content{
+	float: left;
+}
+.hot-content .left-content ul {
+	width: 895px;
+	height: 450px;
+	padding-left: 0px;
+}
+.hot-content .left-content ul li {
+	float: left;
+	width: 285px;
+	height: 210px;
+}
+.hot-content .left-content ul li:not(:nth-child(3n)){
+	margin-right: 20px;
+}
+.hot-content .left-content ul li img {
+	width: 100%;
+	margin-bottom: 13px;
+}
+.hot-content .left-content ul li h4 {
+	font-size: 14px;
+	line-height: 14px;
+	margin: 0;
+	font-weight: bold;
+}
+/*右边部分*/
+.hot-content .right-content {
+	float: right;
+	width: 285px;
+}
+.hot-content .right-content h4 {
+	font-size: 16px;
+	font-weight: bold;
+}
+.hot-content .right-content img {
+	width: 100%;
+	height: 160px;
+}
+.hot-content .right-content ul {
+	margin-top: 33px;
+	padding-left: 0px;
+}
+.hot-content .right-content ul li {
+	font-size: 14px;
+}
+.hot-content .right-content ul li:not(:first-child){
+	padding-left: 22px;
+}
+.hot-content .right-content ul li p {
+	font-size: 12px;
+}
+/*售票列表模块*/
+.sell {
+	height: 840px;
+}
+.sell-point {
+	position: relative;
+	height: 55px;
+	border-bottom: 1px solid #e5e5e5;
+	text-align: center;
+}
+.sell-point ul {
+	position: absolute;
+	top: 45px;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: #fff;
+	padding-left: 0px;
+	list-style: none;
+	line-height: 18px;
+	height: 18px;
+}
+.sell-point ul li {
+	float: left;
+	width: 116px;
+	padding: 0 25px;
+	font-size: 16px;
+	border-right: 1px solid #e5e5e5;
+}
+.sell-point ul li:hover {
+	color: blue;
+}
+.sell-point ul li:last-child {
+	border-right: none;
+}
+.sell-point h3 {
+	font-size: 28px;
+}
+/*中间li点击部分*/
+.sell-carousel {
+	position: relative;
+	margin-top: 30px;
+	height: 492px;
+}
+.sell-carousel ul {
+	list-style: none;
+	position: absolute;
+	padding-left: 0px;
+	top: 0px;
+	left: 0px;
+	opacity: 0;
+}
+.sell-carousel ul li {
+	float: left;
+}
+.sell-carousel ul li:not(:nth-child(3n-1)) {
+	width: 385px;
+	height: 235px;
+}
+.sell-carousel ul li:not(:nth-child(3n)) {
+	margin-right: 20px;
+}
+.sell-carousel ul.cur {
+	opacity: 1;
+}
+.sell-carousel a {
+	z-index: 10;
+	position: absolute;
+	top: 50%;
+	left: -50px;
+	margin-top: -51px;
+	width: 48px;
+	height: 102px;
+	background-color: rgba(0, 0, 0, .5);
+	line-height: 102px;
+	font-size: 48px;
+	text-align: center;
+	color: #fff;
+	cursor: pointer;
+}
+.sell-carousel a.right {
+	left: unset;
+	right: -50px;
+}
+.sell-carousel a:hover {
+	text-decoration: none;
+}
+/*底部列表样式*/
+ul.small {
+	margin-top: 40px;
+	padding-left: 0px;
+}
+ul.small::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+ul.small>li {
+	float: left;
+	width: 284px;
+	height: 140px;
+	padding-top: 35px;
+	padding-left: 155px;
+	margin-right: 20px;
+}
+ul.small>li:last-child {
+	margin-right: 0px;
+}
+ul.small>li ul {
+	padding-left: 0px;
+	padding-right: 11px;
+}
+ul.small>li ul::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+ul.small>li ul li{
+	float: left;
+	margin-right: 8px;
+	color: #888;
+}
+/*全球拾趣味*/
+.interesting {
+	height: 505px;
+}
+.interesting .inter-content {
+	padding-left: 0px;
+	list-style: none;
+}
+.interesting .inter-content li {
+	float: left;
+	width: 285px;
+	height: 210px;
+	margin-bottom: 40px;
+}
+.interesting .inter-content li img {
+	height: 160px;
+}
+.interesting .inter-content li:not(:nth-child(4n)){
+	margin-right: 20px;
+}
+.interesting .inter-content li h3 {
+	margin-top: 10px;
+	margin-bottom: 0px;
+}
+.interesting .inter-content li h3 a {
+	color: black;
+	font-size: 15px;
+}
+.interesting .inter-content li p a {
+	color: #888;
+	font-size: 12px;
+}
