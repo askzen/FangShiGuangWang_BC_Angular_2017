@@ -2,3 +2,4 @@
 再启动的index.html.
 
 ![Image text](https://github.com/askzen/angular-/raw/master/static/%E6%97%B6%E5%85%89%E7%BD%91-1.png)
+![Image text](https://github.com/askzen/angular-/raw/master/static/%E6%97%B6%E5%85%89%E7%BD%91-2.png)
